@@ -1,0 +1,126 @@
+body,
+html {
+    margin-top: 0;
+    margin-left: 10px;
+    background-color: #333;
+    color: white;
+    user-select: none;
+}
+
+html * {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+.title-bar {
+    height: 48px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.points-view {
+    border: 2px solid gray;
+    background-color: #2a2a2a;
+    padding: 10px;
+}
+
+#time-taken {
+    padding: 5px;
+    font-family: monospace;
+    background-color: #111;
+    border: 1px solid gray;
+}
+
+
+.canvasLayers {
+    position: relative;
+    height: 404px;
+    width: 404px;
+}
+
+#mainCanvas {
+    border: 2px solid gray;
+    box-sizing: border-box;
+}
+
+#subCanvas {
+    border: 2px solid gray;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+#overlayCanvas {
+    border: 2px solid gray;
+    box-sizing: border-box;
+}
+
+#grid-options {
+    margin-bottom: 10px;
+}
+
+#points {
+    margin-top: 10px;
+}
+
+.point {
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#large-random-input {
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#large-random-input > input {
+    width: 120px;
+}
+
+.point:hover {
+    background-color: rgb(42, 97, 42);
+}
+
+.point > input {
+    width: 60px;
+    font-size: 16px;
+    border: 1px solid gray;
+    background-color: #222;
+    color: white;
+}

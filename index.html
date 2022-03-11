@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thing</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="title-bar">
+    <div class="title">Closest Pair Finder</div>
+    <div class="subtitle">Kaung Khant Pyae Sone</div>
+    <a target="_blank" href="http://github.com/kkps-d">View On GitHub</a>
+  </div>
+  <div class="container">
+    <div class="canvasLayers">
+      <canvas id="overlayCanvas" width="400" height="400"
+        style="position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+      <canvas id="mainCanvas" width="400" height="400"
+        style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+      <canvas id="subCanvas" width="400" height="400" style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+    </div>
+
+    <div class="points-view">
+      <div id="grid-options">
+        <input type="radio" name="algorithm" id="brute-force" value="0" checked>
+        <label for="brute-force">Brute Force</label>
+        <input type="radio" name="algorithm" id="efficient" value="1">
+        <label for="efficient">Efficient</label><br>
+        <div id="time-taken">?</div>
+        <label for="show-grid">Show grid</label>
+        <input type="checkbox" id="show-grid"><br>
+        <label for="grid-size">Grid size</label>
+        <input type="range" id="grid-size" min="10" max="30" value="30" step="10"><br>
+      </div>
+      <button id="add-point">Add point</button>
+      <button id="demo-points">Demo points</button>
+      <button id="clear-all">Clear all</button><br>
+      <button id="large-random">Generate n points</button>
+      <div id="points">
+
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
